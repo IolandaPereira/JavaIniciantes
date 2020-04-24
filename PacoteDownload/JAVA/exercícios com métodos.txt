@@ -1,0 +1,78 @@
+Métodos
+
+1) método void para saber se o número é par ou ímpar
+package metodosexercicios;
+
+
+public class MetodosExercicios {
+
+    static void parImpar (int num){
+        if (num%2==0){
+            System.out.println(" O número é par");
+        }
+        else {
+            System.out.println(" O número é ímpar");
+        }
+    }
+   
+    public static void main(String[] args) {
+       parImpar (11);
+       
+        
+    }
+    
+}
+
+2) método com retorno boolean para saber se o número é impar ou par
+package metodosexercicios;
+
+
+public class MetodosExercicios {
+
+    static boolean parImpar (int num){
+        boolean resposta;
+        if (num%2==0){
+            resposta= true;
+            return resposta;
+        }
+        else {
+           resposta = false;
+           return resposta;
+        }
+    }
+   
+    public static void main(String[] args) {
+       boolean resp = parImpar(15);
+       System.out.println(resp);
+       
+        
+    }
+    
+}
+
+3) método com retorno String para saber se o número é impar ou par
+package metodosexercicios;
+
+
+public class MetodosExercicios {
+
+    static String parImpar (int num){
+        String resposta;
+        if (num%2==0){
+            resposta = "O número é par!";
+            return resposta;
+        }
+        else {
+           resposta = "O número é ímpar!";
+           return resposta;
+        }
+    }
+   
+    public static void main(String[] args) {
+       String resp = parImpar(10);
+       System.out.println(resp);
+       
+        
+    }
+    
+}

@@ -1,0 +1,86 @@
+1) Criar um vetorA com 5 elementos inteiros. Construir um vetorB  de mesmo tipo e tamanho e mesmos elementos do vetorA.
+
+Scanner teclado = new Scanner(System.in);
+        int vetA[] = new int[4];
+        int vetB[] = new int[4];
+        
+        for (int i=0; i<vetA.length; i++){
+            System.out.println(" Digite um número: ");
+            vetA[i] = teclado.nextInt();
+            vetB[i] = vetA[i];
+        }
+        
+         for (int i=0; i<vetA.length; i++){
+            System.out.println("Vetor A: "+vetA[i]);
+            System.out.println("Vetor B: "+vetB[i]);
+        }
+        
+
+2) Criar um vetorA com 5 elementos inteiros. Construir um vetorB  de mesmo tipo e tamnanho e com os elmentos do vetorA multiplicados por 2, ou seja, B[i]=A[i]*2.
+Scanner teclado = new Scanner(System.in);
+        int vetA[] = new int[4];
+        int vetB[] = new int[4];
+        
+        for (int i=0; i<vetA.length; i++){
+            System.out.println(" Entre com o valor da posição "+i);
+            vetA[i] = teclado.nextInt();
+            vetB[i] = vetA[i]*2;
+        }
+        
+        System.out.println(" --------Vetor A-------------");
+        for (int i=0; i<vetA.length; i++){
+            System.out.print(vetA[i] +" ");
+        }
+        
+        System.out.println();
+        System.out.println(" --------Vetor B-------------");
+        for (int i=0; i<vetA.length; i++){
+            System.out.print(vetB[i]+ " ");
+        }
+        
+    }
+
+3) Faça um programa que leia 10 números inteiros e armazene-os em um vetor. Os números pares, coloque no VetPar e os números impares no vetImpar.
+Scanner teclado = new Scanner(System.in);
+        int vet[] = new int[10];
+        int vetPar[] = new int[10];
+        int vetImpar[] = new int[10];
+        int x=0, y=0;
+        
+        for (int i=0; i<vet.length; i++){ 
+            System.out.println(" Digite um valor: ");
+            vet[i] = teclado.nextInt();       
+        }
+        
+        for (int i=0; i<vet.length; i++){ 
+            if (vet[i]%2==0){
+                vetPar[x] = vet[i];
+                x++;
+            } 
+            else {
+                vetImpar[y] = vet[i];
+                y++;
+            }
+        }
+        
+        System.out.println(" Vetor com todos os números");
+        for (int i=0; i<vet.length; i++){ 
+            System.out.print(vet[i]+" ");
+        }
+      
+        System.out.println();
+        System.out.println(" Vetor dos números pares");
+        for (int i=0; i<x; i++){ 
+            System.out.print(vetPar[i]+" ");
+        }
+        
+        System.out.println();
+        System.out.println(" Vetor dos números [impares");
+        for (int i=0; i<y; i++){ 
+            System.out.print(vetImpar[i]+" ");
+        }
+    }
+
+
+4) Faça  um  Programa que leia  dois vetores  com 10  elementos cada.  Gere um  terceirovetor   de   20   elementos,   cujos   valores   deverão   ser   compostos  
+ pelos   elementos intercalados dos dois outros vetores.
